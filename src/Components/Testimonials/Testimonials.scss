@@ -1,0 +1,24 @@
+@use '../../reuseableStyles/color' as c;
+.testimonials {
+  width: 100%;
+  margin-top: 4rem;
+  .container {
+    // background-color: red;
+    max-width: 80%;
+    margin: 0 auto;
+    color: black;
+    display: grid;
+    grid-template-rows: 3fr repeat();
+    p {
+      text-align: center;
+      font-size: 0.6rem;
+      // color:
+    }
+    .p-title {
+      color: c.$mainColor;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+}

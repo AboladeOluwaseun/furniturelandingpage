@@ -1,0 +1,91 @@
+// Background responsiveness starts
+@media (max-width: 360px) {
+  .showcase {
+    min-height: 50vh;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  .showcase {
+    min-height: 50vh;
+  }
+}
+@media (min-width: 481px) and (max-width: 680px) {
+  .showcase {
+    min-height: 60vh;
+  }
+}
+@media (min-width: 681px) and (max-width: 800px) {
+  .showcase {
+    min-height: 70vh;
+  }
+}
+@media (min-width: 801px) and (max-width: 990px) {
+  .showcase {
+    min-height: 90vh;
+  }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .showcase {
+    min-height: 100vh;
+  }
+}
+// Background responsiveness ends
+
+@media (min-width: 600px) {
+  .showcase {
+    // max-width: 100vw;
+    .container {
+      // max-width: 100vw;
+
+      h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 2rem;
+      }
+      .p {
+        font-size: 0.6rem;
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .showcase {
+    .container {
+      h2 {
+        font-size: 2rem;
+      }
+      .p {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .showcase {
+    .container {
+      h2 {
+        font-size: 3rem;
+      }
+      .p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .showcase {
+    .container {
+      h2 {
+        font-size: 3.5rem;
+      }
+      .p {
+        font-size: 1.3rem;
+        line-height: 1.2;
+      }
+    }
+  }
+}

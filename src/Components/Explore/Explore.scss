@@ -1,0 +1,19 @@
+@use '../../reuseableStyles/color' as c;
+
+.explore {
+  color: black;
+  background-color: c.$secondaryColor;
+  padding: 1rem;
+  position: relative;
+  display: grid;
+  grid-template-rows: 3fr repeat();
+
+  .explore-h2 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .see-all-products {
+    // margin-top: 1rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,52 @@
+@use '../../reuseableStyles/color' as c;
+
+.container {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  position: relative;
+  display: block;
+
+  .product-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    list-style: none;
+    // position: relative;
+    margin-top: 1.3rem;
+    li {
+      font-size: 0.55rem;
+      // padding: 0.3rem 0.4rem;
+      // border-radius: 20%;
+
+      // background-color: #fff;
+      cursor: pointer;
+      &:hover,
+      &:active {
+        color: c.$mainColor;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .indicators {
+    // background-color: black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    .span {
+      border: 2px solid #fff;
+      border-radius: 50%;
+      width: 1rem;
+      height: 1rem;
+      margin: 0.3rem;
+    }
+    .span.active {
+      background-color: #fff;
+    }
+  }
+}
+
+@import "../../reuseableStyles/ProductExploreResponsive";

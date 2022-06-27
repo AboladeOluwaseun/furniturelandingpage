@@ -1,0 +1,43 @@
+@use '../../reuseableStyles/color' as c;
+
+.search {
+  margin-top: 0.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 1.3rem;
+
+  input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.7rem;
+    color: #fff;
+    height: 2rem;
+
+    &::placeholder {
+      color: #fff;
+      font-size: 0.7rem;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .span {
+    position: relative;
+    cursor: pointer;
+
+    img {
+      position: absolute;
+      bottom: -0.9rem;
+      right: 0.6rem;
+      background-color: c.$mainColor;
+      padding: 0.4rem 0.4rem;
+      border-radius: 50%;
+    }
+  }
+}
+@import "../../reuseableStyles/showcaseSearchmobile";

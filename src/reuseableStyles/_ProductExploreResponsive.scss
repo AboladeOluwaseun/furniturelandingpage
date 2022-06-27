@@ -1,0 +1,21 @@
+@media (min-width: 464px) {
+  .container {
+    .product-type {
+      gap: 0.8rem;
+
+      li {
+        // font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    .product-type {
+      li {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}

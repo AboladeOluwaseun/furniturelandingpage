@@ -1,0 +1,25 @@
+@use '../../reuseableStyles/color' as c;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .cart {
+    display: none;
+  }
+
+  .hamburger {
+    position: relative;
+    display: block;
+    img {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
+}
+
+@import "../../reuseableStyles/headermobile";

@@ -1,0 +1,53 @@
+@use '../reuseableStyles/color' as c;
+
+@media (min-width: 700px) {
+  .nav-container {
+    display: flex;
+    align-items: center;
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+
+      img {
+        margin-left: 8px;
+        display: none;
+      }
+      &:hover {
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .header {
+    .cart {
+      position: relative;
+      display: block;
+      img {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+
+      span {
+        position: absolute;
+        padding: 0.15rem 0.35rem;
+        border-radius: 70%;
+        font-size: 0.34rem;
+        top: 0.4rem;
+        left: 0.6rem;
+        background-color: c.$mainColor;
+      }
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
+}
