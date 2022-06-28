@@ -1,7 +1,7 @@
 @use '../../reuseableStyles/color' as c;
 
 .container {
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
   position: relative;
   display: block;
@@ -26,25 +26,6 @@
         color: c.$mainColor;
         font-weight: bold;
       }
-    }
-  }
-
-  .indicators {
-    // background-color: black;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-
-    .span {
-      border: 2px solid #fff;
-      border-radius: 50%;
-      width: 1rem;
-      height: 1rem;
-      margin: 0.3rem;
-    }
-    .span.active {
-      background-color: #fff;
     }
   }
 }

@@ -26,17 +26,6 @@ const ProductExplore = () => {
         <ul className="product-type">{productType}</ul>
 
         <ProductItems product_type={product_Type}></ProductItems>
-
-        <div className="indicators">
-          <span className="span active"></span>
-          <span className="span"></span>
-          <span className="span"></span>
-          <span className="span"></span>
-          <span className="span"></span>
-          <span className="span"></span>
-          <span className="span"></span>
-          <span className="span"></span>
-        </div>
       </div>
     </>
   );

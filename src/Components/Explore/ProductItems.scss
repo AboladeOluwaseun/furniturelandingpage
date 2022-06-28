@@ -60,4 +60,35 @@
     top: 42%;
     font-size: 2rem;
   }
+
+  .rec.rec-dot {
+    // background: #ff4343;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: none;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .rec.rec-dot_active {
+    background: #fff;
+    border: 2px solid #fff;
+  }
+  // .indicators {
+  //   // background-color: black;
+  //   display: none;
+  //   align-items: center;
+  //   justify-content: center;
+  //   padding: 2rem;
+
+  //   .span {
+  //     border: 2px solid #fff;
+  //     border-radius: 50%;
+  //     width: 1rem;
+  //     height: 1rem;
+  //     margin: 0.3rem;
+  //   }
+  //   .span.active {
+  //     background-color: #fff;
+  //   }
+  // }
 }
