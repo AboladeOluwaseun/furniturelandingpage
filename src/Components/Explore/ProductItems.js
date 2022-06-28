@@ -1,12 +1,10 @@
 import React from "react";
-import { useState } from "react";
+
 import { products } from "./Products";
 import ProductItem from "./ProductItem";
 
 import Carousel, { consts } from "react-elastic-carousel";
 
-import leftArrow from "../../Assets/ExploreAssets/leftArrow.png";
-import rightArrow from "../../Assets/ExploreAssets/rightArrow.png";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 import "./ProductItems.scss";
@@ -38,14 +36,9 @@ const ProductItems = ({ product_type }) => {
 
   const productDisplay = products.map((product) => {
     if (product.productType === product_type) {
-      return product.productItems.map((prdItem, index) => {
+      return product.productItems.map((prdItem) => {
         const { name, id, price } = prdItem;
         return (
-          // <div className={index === current ? "slide active" : "slide"}>
-          //   {index === current && (
-
-          //   )}
-          // </div>
           <ProductItem
             name={name}
             key={id}
@@ -55,6 +48,7 @@ const ProductItems = ({ product_type }) => {
         );
       });
     }
+    return null;
   });
   // const length = productDisplay.length;
   // const nextSlide = () => {

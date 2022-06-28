@@ -2,7 +2,7 @@ import React from "react";
 import NavItems from "./NavItems";
 import "./Header.scss";
 import shoppingBag from "../../Assets/ShowcaseAssets/shoppingBag.png";
-import hamburger from "../../Assets/ShowcaseAssets/hamburger.png";
+
 const Header = () => {
   return (
     <>

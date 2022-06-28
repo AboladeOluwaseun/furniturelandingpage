@@ -1,6 +1,6 @@
 import React from "react";
 import Arrow from "../../Assets/AboutUsAssets/Arrow.png";
-import rect from "../../Assets/ExploreAssets/Rectangle 849.png";
+import redifine from "../../Assets/ExploreAssets/redifine.png";
 import "./RedifiningQuality.scss";
 
 const RedifiningQuality = () => {
@@ -8,7 +8,7 @@ const RedifiningQuality = () => {
     <>
       <div className="redifining-quality">
         <div className="container">
-          <img className="cont-img" src={rect} alt="" />
+          <img className="cont-img" src={redifine} alt="" />
           <div className="content">
             <p className="p1">REDEFINING QUALITY</p>
             <h2>

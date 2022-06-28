@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./Header";
 import ShowcaseSearch from "./ShowcaseSearch";
 import "./Showcase.scss";
-import shwcaseimg from "../../Assets/ShowcaseAssets/showcaseImg.png";
 
 const Showcase = () => {
   return (

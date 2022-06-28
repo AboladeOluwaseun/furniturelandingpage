@@ -1,12 +1,9 @@
 import React from "react";
-import ProductItem from "./ProductItem";
 
 import { products } from "./Products";
 import "./ProductExplore.scss";
-import { useEffect } from "react";
+
 import ProductItems from "./ProductItems";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 
 import { useState } from "react";
 
