@@ -5,7 +5,7 @@ import ProductItem from "./ProductItem";
 
 // import Carousel, { consts } from "react-elastic-carousel";
 
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+// import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 import "./ProductItems.scss";
 
