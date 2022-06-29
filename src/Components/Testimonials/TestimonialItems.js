@@ -2,7 +2,7 @@ import React from "react";
 import TestimonyCard from "./TestimonyCard";
 import { testimonies } from "./Testimonies";
 
-import Carousel from "react-elastic-carousel";
+// import Carousel from "react-elastic-carousel";
 
 const TestimonialItems = () => {
   let screenWidth = window.screen.width;
@@ -19,17 +19,17 @@ const TestimonialItems = () => {
     );
   });
 
-  const testimoniesDisplayItems = () => {
-    if (screenWidth <= 360) {
-      return <div>{testimoniesDisplay}</div>;
-    } else
-      return (
-        <Carousel breakPoints={breakPoints} enableAutoPlay autoPlaySpeed={1500}>
-          {testimoniesDisplay}
-        </Carousel>
-      );
-  };
-  return <>{testimoniesDisplayItems()}</>;
+  // const testimoniesDisplayItems = () => {
+  //   if (screenWidth <= 360) {
+  //     return <div>{testimoniesDisplay}</div>;
+  //   } else
+  //     return (
+  //       <Carousel breakPoints={breakPoints} enableAutoPlay autoPlaySpeed={1500}>
+  //         {testimoniesDisplay}
+  //       </Carousel>
+  //     );
+  // };
+  return <>{testimoniesDisplay}</>;
 };
 
 export default TestimonialItems;
