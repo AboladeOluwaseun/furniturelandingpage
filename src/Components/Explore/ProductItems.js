@@ -1,55 +1,51 @@
 import React from "react";
-
 import { products } from "./Products";
 import ProductItem from "./ProductItem";
-
-// import Carousel, { consts } from "react-elastic-carousel";
-
+// import "react-alice-carousel/lib/scss/alice-carousel.scss";
+// import AliceCarousel from "react-alice-carousel";
+// import Carousel,{ consts } from "react-elastic-carousel";
 // import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
-
-import "./ProductItems.scss";
-
-// useState
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+// import OwlCarousel from "react-owl-carousel";
+// import "owl.carousel/dist/assets/owl.carousel.css";
+// import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const ProductItems = ({ product_type }) => {
-  // const [current, setCurrent] = useState(0 && 1);
-  // const breakPoints = [
-  //   { width: 1, itemsToShow: 1 },
-  //   { width: 600, itemsToShow: 2 },
-  //   { width: 760, itemsToShow: 3 },
-  //   { width: 992, itemsToShow: 4 },
-  // ];
-
-  // const myArrow = ({ type, onClick, isEdge }) => {
-  //   const pointer =
-  //     type === consts.PREV ? (
-  //       <FaArrowAltCircleLeft className="arrow-div-1" />
-  //     ) : (
-  //       <FaArrowAltCircleRight className="arrow-div-2" />
-  //     );
-  //   return (
-  //     <div onClick={onClick} disabled={isEdge}>
-  //       {pointer}
-  //     </div>
-  //   );
-  // };
-
-  const productDisplay = products.map((product) => {
-    if (product.productType === product_type) {
-      return product.productItems.map((prdItem) => {
-        const { name, id, price } = prdItem;
-        return (
-          <ProductItem
-            name={name}
-            key={id}
-            price={price}
-            product_Type={product_type}
-          ></ProductItem>
-        );
-      });
-    }
-    return null;
+  const productTypeIndex = products.findIndex(
+    (product) => product.productType === product_type
+  );
+  const productItemsss = products[productTypeIndex].productItems;
+  console.log(productItemsss);
+  const productDisplay = productItemsss.map((prdItem) => {
+    const { name, id, price } = prdItem;
+    return (
+      <ProductItem
+        name={name}
+        key={id}
+        price={price}
+        product_Type={product_type}
+      ></ProductItem>
+    );
   });
+  // const productDisplay = products.map((product) => {
+  //   if (product.productType === product_type) {
+  //     return product.productItems.map((prdItem) => {
+  //       const { name, id, price } = prdItem;
+  //       return (
+  //         <ProductItem
+  //           name={name}
+  //           key={id}
+  //           price={price}
+  //           product_Type={product_type}
+  //         ></ProductItem>
+  //       );
+  //     });
+  //   }
+  //   return null;
+  // });
+
+  // console.log(productDisplay);
   // const length = productDisplay.length;
   // const nextSlide = () => {
   //   setCurrent(
@@ -63,19 +59,10 @@ const ProductItems = ({ product_type }) => {
 
   return (
     <>
-      <div className="container-pitems">
-        {/* <FaArrowAltCircleLeft className="arrow-div-1" />
+      {/* <FaArrowAltCircleLeft className="arrow-div-1" />
         <FaArrowAltCircleRight className="arrow-div-2" /> */}
-        {/* <Carousel
-          breakPoints={breakPoints}
-          enableAutoPlay
-          autoPlaySpeed={1500}
-          renderArrow={myArrow}
-        >
-          {productDisplay}
-        </Carousel> */}
-        {productDisplay}
-      </div>
+
+      <Carousel>{productDisplay}</Carousel>
     </>
   );
 };

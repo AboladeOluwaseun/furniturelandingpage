@@ -9,13 +9,16 @@
     "jquery": "^3.6.0",
     "node-sass": "^7.0.1",
     "react": "^18.2.0",
+    "react-alice-carousel": "^2.6.1",
     "react-dom": "^18.2.0",
-    
- 
+    "react-glider-carousel": "^0.1.2",
     "react-icons": "^4.4.0",
+    "react-owl-carousel": "^2.3.3",
+    "react-responsive-carousel": "^3.2.23",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "sass": "^1.52.3",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },

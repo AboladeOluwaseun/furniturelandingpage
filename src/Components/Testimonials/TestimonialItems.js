@@ -1,6 +1,8 @@
 import React from "react";
 import TestimonyCard from "./TestimonyCard";
 import { testimonies } from "./Testimonies";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 // import Carousel from "react-elastic-carousel";
 
@@ -18,7 +20,7 @@ const TestimonialItems = () => {
       <TestimonyCard testimony={testimony} key={testimony.id}></TestimonyCard>
     );
   });
-
+  console.log(testimoniesDisplay);
   // const testimoniesDisplayItems = () => {
   //   if (screenWidth <= 360) {
   //     return <div>{testimoniesDisplay}</div>;
@@ -29,7 +31,11 @@ const TestimonialItems = () => {
   //       </Carousel>
   //     );
   // };
-  return <>{testimoniesDisplay}</>;
+  return (
+    <>
+      <Carousel showThumbs={false}>{testimoniesDisplay}</Carousel>
+    </>
+  );
 };
 
 export default TestimonialItems;
