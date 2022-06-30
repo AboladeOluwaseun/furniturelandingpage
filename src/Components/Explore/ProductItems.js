@@ -67,10 +67,11 @@ const ProductItems = ({ product_type }) => {
           centerMode={true}
           centerSlidePercentage={100}
           showStatus={false}
-          width={290}
+          width={320}
           autoPlay={true}
           interval={1500}
           infiniteLoop={true}
+          showArrows={false}
         >
           {productDisplay}
         </Carousel>
