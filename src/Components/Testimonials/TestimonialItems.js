@@ -38,8 +38,8 @@ const TestimonialItems = () => {
         centerMode={true}
         centerSlidePercentage={100}
         showStatus={false}
-        width={300}
-        autoPlay={true}
+        width={308}
+        // autoPlay={true}
         interval={1500}
         infiniteLoop={true}
       >
