@@ -47,6 +47,11 @@ export const products = [
         price: "421",
         id: "7",
       },
+      // {
+      //   name: "Roll Chair",
+      //   price: "421",
+      //   id: "7",
+      // },
     ],
   },
   {

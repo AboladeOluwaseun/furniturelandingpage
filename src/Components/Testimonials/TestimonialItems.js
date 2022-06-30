@@ -33,7 +33,18 @@ const TestimonialItems = () => {
   // };
   return (
     <>
-      <Carousel showThumbs={false}>{testimoniesDisplay}</Carousel>
+      <Carousel
+        showThumbs={false}
+        centerMode={true}
+        centerSlidePercentage={100}
+        showStatus={false}
+        width={300}
+        autoPlay={true}
+        interval={1500}
+        infiniteLoop={true}
+      >
+        {testimoniesDisplay}
+      </Carousel>
     </>
   );
 };

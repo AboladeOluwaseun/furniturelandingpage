@@ -16,11 +16,21 @@ const TestimonyCard = ({ testimony }) => {
           <p className="p-testimony">{testimony.testimony}</p>
 
           <div className="rating">
-            <img src={Vectorstar} alt="vector-star" />
-            <img src={Vectorstar} alt="vector-star" />
-            <img src={Vectorstar} alt="vector-star" />
-            <img src={Vectorstar} alt="vector-star" />
-            <img src={Vectorstar} alt="vector-star" />
+            <div>
+              <img src={Vectorstar} alt="vector-star" />
+            </div>
+            <div>
+              <img src={Vectorstar} alt="vector-star" />
+            </div>
+            <div>
+              <img src={Vectorstar} alt="vector-star" />
+            </div>
+            <div>
+              <img src={Vectorstar} alt="vector-star" />
+            </div>
+            <div>
+              <img src={Vectorstar} alt="vector-star" />
+            </div>
           </div>
         </div>
       </div>

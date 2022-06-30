@@ -61,8 +61,20 @@ const ProductItems = ({ product_type }) => {
     <>
       {/* <FaArrowAltCircleLeft className="arrow-div-1" />
         <FaArrowAltCircleRight className="arrow-div-2" /> */}
-
-      <Carousel>{productDisplay}</Carousel>
+      <div className="container-pitems">
+        <Carousel
+          showThumbs={false}
+          centerMode={true}
+          centerSlidePercentage={100}
+          showStatus={false}
+          width={300}
+          autoPlay={true}
+          interval={1500}
+          infiniteLoop={true}
+        >
+          {productDisplay}
+        </Carousel>
+      </div>
     </>
   );
 };
