@@ -38,10 +38,11 @@ const TestimonialItems = () => {
         centerMode={true}
         centerSlidePercentage={100}
         showStatus={false}
-        width={308}
+        width={315}
         // autoPlay={true}
         interval={1500}
         infiniteLoop={true}
+        showArrows={true}
       >
         {testimoniesDisplay}
       </Carousel>
