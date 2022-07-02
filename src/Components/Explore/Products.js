@@ -1,3 +1,9 @@
+import chair1 from "../../Assets/ExploreAssets/Chair1.png";
+import chair2 from "../../Assets/ExploreAssets/leftArrow.png";
+import chair3 from "../../Assets/ExploreAssets/rightArrow.png";
+import chair4 from "../../Assets/ExploreAssets/Vectoradd.png";
+import chair5 from "../../Assets/ExploreAssets/Vectorstar.png";
+
 export const products = [
   {
     productType: "Chair",
@@ -6,26 +12,31 @@ export const products = [
         name: "Bistro Chair",
         price: "321",
         id: "1",
+        src: chair1,
       },
       {
         name: "Era Chair",
         price: "121",
         id: "2",
+        src: chair2,
       },
       {
         name: "Windsor Chair",
         price: "821",
         id: "3",
+        src: chair3,
       },
       {
         name: "Phillipe Chair",
         price: "427",
         id: "4",
+        src: chair4,
       },
       {
         name: "Nice Chair",
         price: "221",
         id: "5",
+        src: chair5,
       },
       {
         name: "Beaut Chair",
