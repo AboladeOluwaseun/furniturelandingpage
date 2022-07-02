@@ -1,6 +1,7 @@
 import React from "react";
 import { products } from "./Products";
 import ProductItem from "./ProductItem";
+
 import Carousel from "react-elastic-carousel";
 
 const ProductItems = ({ product_type }) => {

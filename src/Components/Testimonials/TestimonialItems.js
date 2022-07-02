@@ -1,8 +1,6 @@
 import React from "react";
 import TestimonyCard from "./TestimonyCard";
 import { testimonies } from "./Testimonies";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
 
 // import Carousel from "react-elastic-carousel";
 
@@ -31,23 +29,7 @@ const TestimonialItems = () => {
   //       </Carousel>
   //     );
   // };
-  return (
-    <>
-      <Carousel
-        showThumbs={false}
-        centerMode={true}
-        centerSlidePercentage={100}
-        showStatus={false}
-        width={250}
-        // autoPlay={true}
-        interval={1500}
-        infiniteLoop={true}
-        showArrows={true}
-      >
-        {testimoniesDisplay}
-      </Carousel>
-    </>
-  );
+  return <>{testimoniesDisplay}</>;
 };
 
 export default TestimonialItems;
