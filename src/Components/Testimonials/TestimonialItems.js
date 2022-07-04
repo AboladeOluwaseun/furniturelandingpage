@@ -18,7 +18,7 @@ const TestimonialItems = () => {
       <TestimonyCard testimony={testimony} key={testimony.id}></TestimonyCard>
     );
   });
-  console.log(testimoniesDisplay);
+  // console.log(testimoniesDisplay);
   // const testimoniesDisplayItems = () => {
   //   if (screenWidth <= 360) {
   //     return <div>{testimoniesDisplay}</div>;

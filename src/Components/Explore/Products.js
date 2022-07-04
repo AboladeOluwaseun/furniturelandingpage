@@ -49,6 +49,7 @@ export const products = [
         id: "7",
       },
     ],
+    id: "1",
   },
   {
     productType: "Cofee Tables",
@@ -64,25 +65,31 @@ export const products = [
       //   id: "7",
       // },
     ],
+    id: "2",
   },
   {
     productType: "Beds",
     productItems: [],
+    id: "3",
   },
   {
     productType: "Sofas",
     productItems: [],
+    id: "4",
   },
   {
     productType: "Consoles",
     productItems: [],
+    id: "5",
   },
   {
     productType: "Tables",
     productItems: [],
+    id: "6",
   },
   {
     productType: "Soft seating",
     productItems: [],
+    id: "7",
   },
 ];

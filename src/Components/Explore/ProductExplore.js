@@ -11,7 +11,7 @@ const ProductExplore = () => {
   const [product_Type, setProductType] = useState("Chair");
   const productType = products.map((product) => {
     return (
-      <li onClick={() => setProductType(product.productType)}>
+      <li onClick={() => setProductType(product.productType)} key={product.id}>
         {product.productType}
       </li>
     );

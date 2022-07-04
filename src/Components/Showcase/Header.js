@@ -9,7 +9,6 @@ const Header = () => {
       <div className="header">
         <h1>Foniso</h1>
         <NavItems
-          key="1"
           Furniture="Furniture"
           Blog="Blog"
           AboutUs="About Us"

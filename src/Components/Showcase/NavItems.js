@@ -6,7 +6,7 @@ const NavItems = (props) => {
   const propValues = Object.values(propsObject);
   const navItems = propValues.map((navItemName, index) => {
     return (
-      <div className="nav-item">
+      <div className="nav-item" key={propValues[index]}>
         <p>{propValues[index]}</p>
         <img src={navArrow} alt="navArrow" />
       </div>

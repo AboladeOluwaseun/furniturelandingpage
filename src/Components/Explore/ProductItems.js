@@ -9,7 +9,7 @@ const ProductItems = ({ product_type }) => {
     (product) => product.productType === product_type
   );
   const productItemsss = products[productTypeIndex].productItems;
-  console.log(productItemsss);
+  // console.log(productItemsss);
   const productDisplay = productItemsss.map((prdItem) => {
     const { name, id, price, src } = prdItem;
     return (
