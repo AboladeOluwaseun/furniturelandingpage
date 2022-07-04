@@ -1,13 +1,32 @@
 @use '../../reuseableStyles/color' as c;
 
 .container-pitems {
-  // display: block;
-  max-width: 80%;
+  display: block;
+  max-width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+
+  // .rec-arrow {
+  //   position: absolute;
+  //   cursor: pointer;
+  //   top: 42%;
+  //   left: 0%;
+  //   font-size: 2rem;
+  //   color: #fff;
+  //   cursor: pointer;
+  //   z-index: 10;
+  //   user-select: none;
+  //   background-color: red;
+  //   &:hover {
+  //     color: c.$mainColor;
+  //   }
+  //   &:active {
+  //     color: c.$mainColor;
+  //   }
+  // }
   // justify-content: center;
   // background-color: red;
   // .slide {
@@ -19,10 +38,7 @@
   //   outline: none;
   //   box-shadow: inset 0 0 1px 1px red;
   // }
-  // .rec.rec-arrow {
-  //   background-color: white;
-  //   color: black;
-  // }
+
   // .rec.rec-arrow:hover {
   //   color: #fff;
   //   background-color: c.$mainColor;
@@ -37,26 +53,30 @@
   //   background-color: green;
   // }
 
-  .arrow-div-1,
-  .arrow-div-2 {
+  .leftArrow,
+  .rightArrow {
     position: absolute;
     cursor: pointer;
     top: 42%;
     left: 0%;
     font-size: 2rem;
     color: #fff;
+    background-color: #fff;
+    padding: 0.7rem;
+    border-radius: 50%;
     cursor: pointer;
     z-index: 10;
     user-select: none;
     &:hover {
-      color: c.$mainColor;
+      transform: scale(1.2, 1.2);
     }
     &:active {
       color: c.$mainColor;
+      // transform: scale(1.2, 1.2);
     }
   }
-  .arrow-div-2 {
-    left: 95%;
+  .rightArrow {
+    left: 90%;
     top: 42%;
     font-size: 2rem;
   }
@@ -91,4 +111,19 @@
   //     background-color: #fff;
   //   }
   // }
+  // }
+
+  // .rec-arrow {
+  //   border-radius: 0;
+  //   background-color: red;
+  //   &:hover {
+  //     background-color: black;
+  //   }
+}
+@media (min-width: 1000px) {
+  .container-pitems {
+    .rightArrow {
+      left: 95%;
+    }
+  }
 }

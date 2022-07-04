@@ -1,14 +1,14 @@
 import React from "react";
 import "./ProductItem.scss";
-import chair from "../../Assets/ExploreAssets/Chair1.png";
+// import chair from "../../Assets/ExploreAssets/Chair1.png";
 import Vectorstar from "../../Assets/ExploreAssets/Vectorstar.png";
 import Vectoradd from "../../Assets/ExploreAssets/Vectoradd.png";
-const ProductItem = ({ name, price, id, product_type }) => {
+const ProductItem = ({ name, price, id, product_type, img }) => {
   return (
     <>
       <div className="product-item">
         <div>
-          <img className="product-img" src={chair} alt="chair" />
+          <img className="product-img" src={img} alt="chair" />
         </div>
         <div className="product-detail">
           <div className="product-name">
