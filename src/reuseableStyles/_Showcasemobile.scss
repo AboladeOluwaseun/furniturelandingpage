@@ -29,15 +29,23 @@
     min-height: 100vh;
   }
 }
+
+@media (min-width: 1201px) {
+  .showcase {
+    min-height: 150vh;
+  }
+}
+
 // Background responsiveness ends
 
-@media (min-width: 600px) {
+@media (min-width: 496px) {
   .showcase {
     // max-width: 100vw;
     .container {
       // max-width: 100vw;
 
       h2 {
+        margin-top: 4rem;
         font-size: 1.5rem;
         text-align: center;
         margin-left: 2rem;
@@ -54,6 +62,7 @@
   .showcase {
     .container {
       h2 {
+        margin-top: 8rem;
         font-size: 2rem;
       }
       .p {
@@ -76,10 +85,11 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1201px) {
   .showcase {
     .container {
       h2 {
+        margin-top: 8rem;
         font-size: 3.5rem;
       }
       .p {

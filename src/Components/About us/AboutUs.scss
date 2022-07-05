@@ -12,48 +12,25 @@
     h2 {
       margin-top: 3rem;
     }
+    .divs {
+      .div-1,
+      .div-2,
+      .div-3 {
+        // background-color: c.$secondaryColor;
+        padding: 2.7rem;
 
-    .div-1 {
-      margin-top: 2rem;
-      // background-color: c.$secondaryColor;
-      padding: 2.7rem;
-
-      .p-1 {
-        font-weight: bold;
-        margin-bottom: 1rem;
-      }
-      .p-3 {
-        margin-top: 1.2rem;
-        color: c.$mainColor;
-      }
-    }
-
-    .div-2 {
-      margin-top: 2rem;
-      padding: 2.7rem;
-
-      .p-1 {
-        font-weight: bold;
-        margin-bottom: 1rem;
-      }
-      .p-3 {
-        margin-top: 1.2rem;
-        color: c.$mainColor;
-      }
-    }
-
-    .div-3 {
-      margin-top: 2rem;
-      // background-color: c.$secondaryColor;
-      padding: 2.7rem;
-
-      .p-1 {
-        font-weight: bold;
-        margin-bottom: 1rem;
-      }
-      .p-3 {
-        margin-top: 1.2rem;
-        color: c.$mainColor;
+        .p-1 {
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+        .p-3 {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          margin-top: 1.2rem;
+          color: c.$mainColor;
+          justify-content: center;
+        }
       }
     }
   }

@@ -1,0 +1,58 @@
+@use '../../reuseableStyles/color' as c;
+
+.test-items {
+  .leftArrow,
+  .rightArrow {
+    position: absolute;
+    cursor: pointer;
+    top: 42%;
+    left: 0%;
+    font-size: 2rem;
+    color: #fff;
+    background-color: c.$secondaryColor;
+    padding: 0.7rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+    &:active {
+      transform: scale(1.2, 1.2);
+    }
+  }
+  .rightArrow {
+    left: 87%;
+    top: 42%;
+    font-size: 2rem;
+  }
+
+  .rec.rec-dot {
+    background: c.$secondaryColor;
+    border: 2px solid c.$secondaryColor;
+    border-radius: 50%;
+    box-shadow: none;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .rec.rec-dot_active {
+    background: #fff;
+    border: 2px solid c.$secondaryColor;
+  }
+}
+
+@media (min-width: 713px) {
+  .test-items {
+    .rightArrow {
+      left: 92%;
+    }
+  }
+}
+@media (min-width: 1088px) {
+  .test-items {
+    .rightArrow {
+      left: 95%;
+    }
+  }
+}

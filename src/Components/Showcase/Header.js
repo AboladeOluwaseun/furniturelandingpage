@@ -2,7 +2,7 @@ import React from "react";
 import NavItems from "./NavItems";
 import "./Header.scss";
 import shoppingBag from "../../Assets/ShowcaseAssets/shoppingBag.png";
-
+import MenuIcon from "@mui/icons-material/Menu";
 const Header = () => {
   return (
     <>
@@ -18,9 +18,17 @@ const Header = () => {
           <img src={shoppingBag} alt="" />
           <span>0</span>
         </div>
-        <div className="hamburger">
-          <img src={shoppingBag} alt="" />
-        </div>
+        <MenuIcon
+          sx={{
+            display: {
+              xs: "block",
+              sm: "none",
+              md: "none",
+              lg: "none",
+              xl: "none",
+            },
+          }}
+        />
       </div>
     </>
   );

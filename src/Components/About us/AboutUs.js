@@ -27,37 +27,38 @@ const AboutUs = () => {
       <div className="about-us">
         <div className="container">
           <h2>Why Choose Us</h2>
-          <div className="div-1">
-            <p className="p-1">{About.luxuryFacilities.title}</p>
-            <p className="p-2">{About.luxuryFacilities.content}</p>
-            <p className="p-3">
-              More info{" "}
-              <span>
+          <div className="divs">
+            <div className="div-1">
+              <p className="p-1">{About.luxuryFacilities.title}</p>
+              <p className="p-2">{About.luxuryFacilities.content}</p>
+              <div className="p-3">
+                {" "}
+                <p>More info</p>
                 <img src={arrow} alt="arrow" />
-              </span>
-            </p>
-          </div>
+              </div>
+            </div>
 
-          <div className="div-2">
-            <p className="p-1">{About.affordablePrice.title}</p>
-            <p className="p-2">{About.affordablePrice.content}</p>
-            <p className="p-3">
-              More info{" "}
-              <span>
+            <div className="div-2">
+              <p className="p-1">{About.affordablePrice.title}</p>
+              <p className="p-2">{About.affordablePrice.content}</p>
+              <div className="p-3">
+                {" "}
+                <p>More info</p>
                 <img src={arrow} alt="arrow" />
-              </span>
-            </p>
-          </div>
+              </div>
+            </div>
 
-          <div className="div-3">
-            <p className="p-1">{About.manyChoices.title}</p>
-            <p className="p-2">{About.manyChoices.content}</p>
-            <p className="p-3">
-              More info{" "}
-              <span>
-                <img src={arrow} alt="arrow" />
-              </span>
-            </p>
+            <div className="div-3">
+              <p className="p-1">{About.manyChoices.title}</p>
+              <p className="p-2">{About.manyChoices.content}</p>
+              <div className="p-3">
+                {" "}
+                <p>More info</p>
+                <div>
+                  <img src={arrow} alt="arrow" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

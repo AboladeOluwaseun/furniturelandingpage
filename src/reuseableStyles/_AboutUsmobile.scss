@@ -1,21 +1,128 @@
-@media (min-width: 762px) {
+@media (min-width: 640px) {
   .about-us {
     .container {
-      display: flex;
-      align-items: center;
-      padding: 2rem;
-      .div-1 {
-        background-color: #fff;
-        // margin-top: 0;
+      max-width: 90%;
+      margin-top: 6rem;
+      margin-bottom: 6rem;
+      h2 {
+        font-size: 1.5rem;
       }
-      // .div-2 {
-      //   // margin-top: -2rem;
-      // }
-      .div-3 {
-        background-color: #fff;
-        // .p-1 {
-        // }
+      .divs {
+        display: flex;
+        align-items: center;
+        font-size: 0.5rem;
+        padding: 1rem 0.3rem 1rem;
+        .div-1,
+        .div-2,
+        .div-3 {
+          background-color: #fff;
+          font-size: 0.5rem;
+        }
       }
     }
   }
 }
+
+@media (min-width: 881px) {
+  .about-us {
+    .container {
+      .div-1,
+      .divs {
+        .div-1,
+        .div-2,
+        .div-3 {
+          background-color: #fff;
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .about-us {
+    .container {
+      .divs {
+        .div-1,
+        .div-2,
+        .div-3 {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1178px) {
+  .about-us {
+    .container {
+      h2 {
+        font-size: 2rem;
+      }
+      .divs {
+        .div-1,
+        .div-2,
+        .div-3 {
+          background-color: #fff;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .about-us {
+    .container {
+      .divs {
+        .div-1,
+        .div-2,
+        .div-3 {
+          background-color: #fff;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1430px) {
+  .about-us {
+    .container {
+      h2 {
+        font-size: 2rem;
+      }
+      .divs {
+        .div-1,
+        .div-2,
+        .div-3 {
+          background-color: #fff;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+// @media (min-width: 762px) {
+//   .about-us {
+//     .container {
+//       max-width: 80%;
+//       display: flex;
+//       align-items: center;
+//       font-size: 0.4rem;
+//       padding: 4rem 2rem;
+//       .div-1 {
+//         background-color: #fff;
+//         // margin-top: 0;
+//       }
+//       // .div-2 {
+//       //   // margin-top: -2rem;
+//       // }
+//       .div-3 {
+//         background-color: #fff;
+//         // .p-1 {
+//         // }
+//       }
+//     }
+//   }
+// }

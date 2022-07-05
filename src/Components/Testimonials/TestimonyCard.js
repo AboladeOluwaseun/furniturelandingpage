@@ -7,7 +7,7 @@ const TestimonyCard = ({ testimony }) => {
   return (
     <>
       <div className="test-container">
-        <img className="bkgd-img" src={testimonybackground} alt="" />
+        <img className="test-background" src={testimonybackground} alt="" />
         <div className="testimony-detail">
           <div>
             <p className="p-name">{testimony.name}</p>

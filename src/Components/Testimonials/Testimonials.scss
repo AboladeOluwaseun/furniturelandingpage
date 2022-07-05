@@ -1,18 +1,18 @@
 @use '../../reuseableStyles/color' as c;
 .testimonials {
-  width: 60%;
+  width: 100%;
   margin-top: 4rem;
   margin: 0 auto;
   .container {
     // background-color: red;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 4rem auto 0;
     color: black;
     display: grid;
     grid-template-rows: 3fr repeat();
-    p {
+    .p-title {
       text-align: center;
-      font-size: 0.6rem;
+      font-size: 0.8rem;
       // color:
     }
     .p-title {
@@ -20,6 +20,8 @@
     }
     h2 {
       text-align: center;
+      font-size: 1.1rem;
+      margin-top: 1rem;
     }
   }
 }
